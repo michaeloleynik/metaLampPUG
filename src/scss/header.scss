@@ -5,7 +5,7 @@ header {
 }
 
 .header {
-  margin: 0 14rem;
+  margin: 0 11.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,3 +123,10 @@ header {
   border-radius: 2.2rem;
 }
 
+
+.header__username {
+  font-size: 1.4rem;
+  color: rgba($dark, .5);
+  border-left: .1rem solid rgba($dark, .1);
+  padding-left: 2rem;
+}

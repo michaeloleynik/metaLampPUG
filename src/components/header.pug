@@ -1,3 +1,5 @@
+- var isAuth = false
+
 header
   .header
     img(src="./images/Logo.svg", alt="logo").header__logo
@@ -9,7 +11,10 @@ header
         li.header__link: a(href="#") Вакансии
         li.header__link: a(href="#") Новости
         li.header__link.header__link_multiple: a(href="#") Соглашения
-
-    ul.header__btns
-      li.header__sign-in-btn: a(href="#") ВОЙТИ
-      li.header__sign-up-btn: a(href="#") ЗАРЕГИСТРИРОВАТЬСЯ
+    
+    if isAuth
+      span.header__username Юлий Цезарь
+    else
+      ul.header__btns
+        li.header__sign-in-btn: a(href="#") ВОЙТИ
+        li.header__sign-up-btn: a(href="#") ЗАРЕГИСТРИРОВАТЬСЯ
