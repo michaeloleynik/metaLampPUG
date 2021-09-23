@@ -1,0 +1,138 @@
+footer {
+  flex: 0;
+}
+
+.footer {
+  margin: 0 11.3rem 12.7rem;
+  
+  padding: 1.5rem 0;
+
+  &__nav-and-search {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__logo-and-desc {
+    max-width: 26rem;
+  }
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    color: rgba($dark, .75);
+
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    margin-left: 4rem;
+    &-list {
+      margin: 0;
+      padding: 0;
+      font-size: 1.4rem;
+      
+    }
+
+    &-link {
+      list-style-type: none;
+      margin: 2rem 0;
+      
+      
+      &_bold {
+        font-weight: 700;
+        color: rgba($dark, 1);
+        margin-top: 0;
+      }
+
+      & a {
+        text-decoration: none;
+
+        color: rgba($dark, .5);
+      }
+    }
+  }
+
+  &__subscribe-block {
+    max-width: 26rem;
+    margin-left: 5.1rem;
+  }
+
+  &__subscribe-title {
+    font-weight: 700;
+    color: rgba($dark, 1);
+    margin: 0;
+  }
+
+  &__subscribe-desc {
+    color: rgba($dark, .75);
+
+    line-height: 1.7;
+  }
+
+  &__subscribe-field {
+    // display: inline-block;
+    position: relative;
+    // width: 100%;
+
+  }
+
+  &__subscribe-input {
+    // height: 4.4rem;
+    width: 22.5rem;
+    font-size: 1.4rem;
+    color: rgba($dark, .25);
+    border-color: rgba($dark, .25);
+    border-radius: .4rem;
+    padding: 1.2rem 1.5rem;
+
+    &::placeholder {
+      color: rgba($dark, .25);
+    }
+  }
+
+  &__arrow-btn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: calc((100% - 1.8rem) / 2);
+    right: 1.5rem;
+    z-index: 2;
+  }
+}
+
+.author-rights {
+  // margin: 0 11.3rem;
+  
+  padding: 2.3rem 11.3rem;
+
+  border-top: .1rem solid rgba($dark, .25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    font-size: 1.4rem;
+    color: rgba($dark, .75);
+  }
+  &__social-media-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+  }
+
+  &__social-media-link {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+}
+
